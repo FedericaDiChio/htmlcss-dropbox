@@ -32,9 +32,9 @@ body {
     text-align: right;
 }
 
-.txt-left {
+/* .txt-left {
     text-align: left;
-}
+} */
 
 /* UTILITIES BOTTONI */
 
@@ -44,11 +44,8 @@ body {
 }
 
 .btn.btn-s {
-    padding: 5px 20px;
-}
-
-.btn.btn-m {
-
+    padding: 5px 20px;  /* CONTROLLARE */
+    width: fit-content;
 }
 
 .btn.btn-l {
@@ -61,8 +58,16 @@ body {
     float: left;
 }
 
+.col.w-30 {
+    width: 30%;
+}
+
 .col.w-50 {
     width: 50%;
+}
+
+.col.w-70 {
+    width: 70%;
 }
 
 /* HEADER TOPBAR  */
@@ -73,7 +78,7 @@ header nav {
 
 #logo {
     vertical-align: middle;
-    padding: 0 20px;
+    padding: 0 20px; /* CONTROLLARE */
 }
 
 header .menu li {
@@ -100,8 +105,15 @@ header .menu li a:hover { /* (in comune con liste footer)  */
 #spotlight {
     height: 600px;
     background-color: rgb(180, 208, 231);
+    /* padding: 50px 0; CONTROLLARE */
 }
 
 #spotlight h1 {
-    font-size: 60px;
+    font-size: 60px; /* CONTROLLARE */
+    padding-bottom: 30px;
+}
+
+#spotlight img {
+    width: 100%;  /* CONTROLLARE */
+    
 }
