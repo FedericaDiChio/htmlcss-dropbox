@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 .container-s {
@@ -31,8 +32,8 @@ body {
     text-align: right;
 }
 
-.txt-center {
-    text-align: center;
+.txt-left {
+    text-align: left;
 }
 
 /* UTILITIES BOTTONI */
@@ -84,10 +85,10 @@ header .menu li {
 }
 
 header .menu li a {
-    text-decoration: none; /* (in comune con altre liste)  */
+    text-decoration: none; /* (in comune con liste footer)  */
 }
 
-header .menu li a:hover { /* (in comune con altre liste)  */
+header .menu li a:hover { /* (in comune con liste footer)  */
     text-decoration: underline;
 }
 
@@ -99,4 +100,8 @@ header .menu li a:hover { /* (in comune con altre liste)  */
 #spotlight {
     height: 600px;
     background-color: rgb(180, 208, 231);
+}
+
+#spotlight h1 {
+    font-size: 60px;
 }
