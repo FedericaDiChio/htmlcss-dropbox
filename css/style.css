@@ -1,4 +1,4 @@
-/* generics  */
+/* GENERICS  */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,4 +17,86 @@ body {
 .container-l {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* UTIILITIES TESTO */ 
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+/* UTILITIES BOTTONI */
+
+.btn {
+    background-color: rgb(0, 97, 255);
+    color: white;
+}
+
+.btn.btn-s {
+    padding: 5px 20px;
+}
+
+.btn.btn-m {
+
+}
+
+.btn.btn-l {
+
+}
+
+/* COLONNE */
+
+.col {
+    float: left;
+}
+
+.col.w-50 {
+    width: 50%;
+}
+
+/* HEADER TOPBAR  */
+header nav {
+    height: 80px;
+    line-height: 80px;
+}
+
+#logo {
+    vertical-align: middle;
+    padding: 0 20px;
+}
+
+header .menu li {
+    list-style-type: none; /* (in comune con altre liste)  */
+    display: inline-block;
+    vertical-align: middle;
+    /* MARGINI (altre classi?)  */
+    margin: 0 20px;
+}
+
+header .menu li a {
+    text-decoration: none; /* (in comune con altre liste)  */
+}
+
+header .menu li a:hover { /* (in comune con altre liste)  */
+    text-decoration: underline;
+}
+
+
+
+
+/* SPOTLIGHT */
+
+#spotlight {
+    height: 600px;
+    background-color: rgb(180, 208, 231);
 }
