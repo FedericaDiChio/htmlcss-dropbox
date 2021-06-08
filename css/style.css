@@ -109,7 +109,7 @@ main section {              /*  CONTROLLARE */
     width: 30%;
 }
 
-.w-33 {
+.col.w-33 {
     width: calc(100% / 3);
    
 }
@@ -172,6 +172,8 @@ main section {              /*  CONTROLLARE */
 
 /* fee plan */
 
+
+
 .plan-option .content {
     border: 1px solid black;
 }
@@ -221,11 +223,4 @@ main section {              /*  CONTROLLARE */
 
 
 /* Dropbox business */
-
-
-
-#dp-business .col.w-33 {
-width: calc((100% / 3) - 20px);
-margin-right: 20px;
-}
 
