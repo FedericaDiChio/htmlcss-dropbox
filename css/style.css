@@ -26,31 +26,78 @@ body {
     clear: both;
 }
 
-/* UTIILITIES TESTO */ 
+/* UTIILITIES */ 
+img { 
+    max-width: 100%;  
+}
+
+i .fas, .far {
+    margin-right: 5px;
+}
+
+h2 {
+    font-size: 32px;        /*  CONTROLLARE */
+}
+
+h3 {                        /*  CONTROLLARE */ 
+    font-size: 25px;
+}
+
+main section {              /*  CONTROLLARE */ 
+    padding: 50px 0;
+}
+
+/* testo */
+.txt-center {
+    text-align: center;
+}
 
 .txt-right {
     text-align: right;
 }
 
-/* .txt-left {
-    text-align: left;
-} */
-
-/* UTILITIES BOTTONI */
-
+/* bottoni */
 .btn {
     background-color: rgb(0, 97, 255);
     color: white;
+    padding: 5px 20px;
 }
 
-.btn.btn-s {
-    padding: 5px 20px;  /* CONTROLLARE */
-    width: fit-content;
+.btn.btn-white {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
 }
 
-.btn.btn-l {
 
+/* margin */
+.mb-30 {                              /* top */
+    margin-bottom: 30px; 
 }
+
+.mt-20 {                              /* bottom */      
+    margin-top: 20px;
+}
+
+.mt-30 {                               /* bottom */ 
+    margin-top: 30px; 
+}
+
+/* padding */
+
+.pb-40 {                             /* bottom */
+    padding-bottom: 40px;
+}
+
+.py-10 {                              /* top&bottom */
+    padding: 10px 0;           /*  CONTROLLARE */
+} 
+
+
+/* .my-10 {
+    margin: 10px 0;
+} */
+
 
 /* COLONNE */
 
@@ -62,6 +109,11 @@ body {
     width: 30%;
 }
 
+.w-33 {
+    width: calc(100% / 3);
+   
+}
+
 .col.w-50 {
     width: 50%;
 }
@@ -70,50 +122,110 @@ body {
     width: 70%;
 }
 
-/* HEADER TOPBAR  */
-header nav {
+/* HEADER*/
+
+#main-header nav {
     height: 80px;
     line-height: 80px;
 }
 
-#logo {
-    vertical-align: middle;
-    padding: 0 20px; /* CONTROLLARE */
+#logo  {
+    vertical-align: middle;       /*manca padding-left*/
 }
 
-header .menu li {
+#main-header .menu li {
     list-style-type: none; /* (in comune con altre liste)  */
     display: inline-block;
     vertical-align: middle;
-    /* MARGINI (altre classi?)  */
-    margin: 0 20px;
+    margin: 0 20px;                     /*  CONTROLLARE */ 
 }
 
-header .menu li a {
-    text-decoration: none; /* (in comune con liste footer)  */
+#main-header {
+    padding-bottom: 100px;              /*  CONTROLLARE */ 
 }
-
-header .menu li a:hover { /* (in comune con liste footer)  */
-    text-decoration: underline;
-}
-
-
-
 
 /* SPOTLIGHT */
 
 #spotlight {
-    height: 600px;
+    height: 650px;
     background-color: rgb(180, 208, 231);
-    /* padding: 50px 0; CONTROLLARE */
+}
+
+#spotlight .container-l {
+    position: relative;
 }
 
 #spotlight h1 {
-    font-size: 60px; /* CONTROLLARE */
-    padding-bottom: 30px;
-}
-
-#spotlight img {
-    width: 100%;  /* CONTROLLARE */
+    font-size: 58px;
+    padding-top: 50px;                      /*  CONTROLLARE */ 
     
 }
+
+#spotlight .fa-arrow-down {
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+}
+
+
+/* corpo centrale */
+
+/* fee plan */
+
+.plan-option .content {
+    border: 1px solid black;
+}
+
+.plan-option .content header {
+    border-bottom: 1px solid black;
+}
+
+.plan-option .content .plan-type {
+    padding-left: 30px;                                  /*  CONTROLLARE */
+}
+
+
+
+/* liste  */
+
+
+.plan-option .list-icon {
+    list-style-type: none;
+    margin: 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* partner  */
+
+.partner .content {
+    padding: 40px;                            /*  CONTROLLARE */
+    
+}
+
+.partner p {
+    margin: 20px 0;                           /*  CONTROLLARE */
+}
+
+
+/* Dropbox business */
+
+
+
+#dp-business .col.w-33 {
+width: calc((100% / 3) - 20px);
+margin-right: 20px;
+}
+
