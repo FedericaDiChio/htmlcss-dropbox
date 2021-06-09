@@ -27,10 +27,15 @@ body {
 }
 
 
-/* UTIILITIES */ 
+/* UTILITY */ 
 a {
     text-decoration: none;
+    color:black;
 }
+
+a:hover {
+    text-decoration: underline;
+} 
 
 img { 
     max-width: 100%;  
@@ -60,6 +65,7 @@ h3 {
 
 .txt-blue {
     color:rgb(0, 97, 255);
+    font-weight: bold;
 }
 
 .txt-center {
@@ -84,6 +90,12 @@ h3 {
 .btn-white {
     padding: 5px 20px;
     border: 1px solid black;
+    background-color: white;
+}
+
+.btn-white.large {
+    padding: 5px 50px;
+    border: 0;
 }
 
 /* HR  */
@@ -219,20 +231,21 @@ hr.hr-l {
     margin: 0 30px;
 }
 
+
 .plan-option .content {
     border: 1px solid rgb(208, 208, 211);
     height: 800px;
 }
 
-.plan-option .content header {
+.plan-option .section-header {
     border-bottom: 1px solid rgb(208, 208, 211);
     padding: 10px 0;
 }
 
-.plan-option .content .plan-type {
-    padding-left: 30px;
+.plan-option .plan-type {
+    padding: 0 30px;
+    
 }
-
 
 /* LISTS  */
 .plan-option .icon {
@@ -247,7 +260,6 @@ hr.hr-l {
     margin-right: 5px;
 }
 
-
 .faq .icon {
     list-style-type: none;
     padding: 30px 0;
@@ -258,6 +270,14 @@ hr.hr-l {
     border-bottom: 1px solid rgb(208, 208, 211);
 }
 
+footer li {
+    list-style-type: none;
+    margin: 15px 0; 
+}
+
+footer li a {
+    color: white;
+}
 
 /* ICONS  */
 .icon.check::before {
@@ -295,7 +315,6 @@ hr.hr-l {
     right: 20px;
 }                                          
 
-
 /* DROPBOX BUSINESS */
 input[type="radio"] {
     margin-left: 10px;
@@ -306,12 +325,34 @@ input[type="radio"]:first-child {
     margin-left: 0;
 }
 
-/* PARTNER */
 
+/* CUSTOMER  */
+.customer .box > .col {
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+    background-color: rgb(245, 245, 245);
+} 
 
+.customer .col.logo-box  {
+    height: 50%;
+    width: 50%;
+    position: relative;
+    
+}
+
+.customer .logo-box > img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px 50px;
+}
+
+.customer .box-center > img {
+    width: 30%;
+}
 
 /* FREE TRIAL */
-
 .trial {
     height: 300px;
 }
@@ -332,7 +373,6 @@ input[type="radio"]:first-child {
 }
 
 /* FAQ */
-
 .faq .container-s {
     position: relative;
 }
@@ -344,39 +384,14 @@ footer {
     color: white;
 }
 
-footer li {
-    list-style-type: none; 
-    margin: 15px 0; 
+footer h4 {
+    font-size: 18px;
 }
 
-.contact {                            
+.info{                            
     padding-top: 100px;
 }
 
-.box > .col {
-    width: calc(100% / 3);
-    height: calc(100vw / 3);
-    background-color: rgb(245, 245, 245);
-} 
-
-.col.logo-box  {
-    height: 50%;
-    width: 50%;
-    position: relative;
-    
-}
-
-.logo-box > img {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 50px 50px;
-}
-
-.box-center > img {
-    width: 30%;
-}
 
 /* COLORS  */
 
@@ -411,5 +426,4 @@ footer li {
 .bg-yellow {
     background-color: rgb(255, 216, 48); 
 }
-
 
