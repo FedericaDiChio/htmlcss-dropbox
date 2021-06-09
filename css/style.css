@@ -38,15 +38,15 @@ i .fas, .far {
 }
 
 h2 {
-    font-size: 32px;        /*  CONTROLLARE */
+    font-size: 32px;        
 }
 
-h3 {                        /*  CONTROLLARE */ 
+h3 {                       
     font-size: 25px;
 }
 
 
-/* testo */
+/* TEXT */
 .txt-blue {
     color:rgb(0, 97, 255);
 }
@@ -59,7 +59,7 @@ h3 {                        /*  CONTROLLARE */
     text-align: right;
 }
 
-/* bottoni */
+/* BUTTONS */
 .btn {
     background-color: rgb(0, 97, 255);
     color: white;
@@ -71,42 +71,42 @@ h3 {                        /*  CONTROLLARE */
 } */
 
 
-/* margin      CONTROLLARE */
-.mb-30 {                              /* top */
+/* MARGIN */     
+.mb-30 {                              
     margin-bottom: 30px; 
 }
 
-.mt-20 {                              /* bottom */      
+.mt-20 {                                    
     margin-top: 20px;
 }
 
-.mt-30 {                               /* bottom */ 
+.mt-30 {                                
     margin-top: 30px; 
 }
 
+.my-80 {
+    margin: 80px 0;
+}
 
+/* PADDING */
 
-/* padding */
-.pb-40 {                             /* bottom */
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pb-40 {                             
     padding-bottom: 40px;
 }
 
-.py-50 {
-    padding: 50px 0;
+.pad-40 {
+    padding: 40px 40px;
 }
 
-.py-10 {                              /* top&bottom */
-    padding: 10px 0;           /*  CONTROLLARE */
-} 
-
-
-/* .my-10 {
-    margin: 10px 0;
-} */
-
-
-
-/* COLONNE */
+/* COLUMNS */
 .col {
     float: left;
 }
@@ -143,21 +143,22 @@ h3 {                        /*  CONTROLLARE */
 }
 
 #main-header .menu li {
-    list-style-type: none; /* (in comune con altre liste)  */
+    list-style-type: none; 
     display: inline-block;
     vertical-align: middle;
-    margin: 0 20px;                     /*  CONTROLLARE */ 
+    margin: 0 20px;
+                          
 }
 
 #main-header {
-    padding-bottom: 100px;              /*  CONTROLLARE */ 
+    margin-bottom: 150px;   
 }
 
 
 /* SPOTLIGHT */
 #spotlight {
     height: 650px;
-    background-color: rgb(180, 208, 231);
+    
 }
 
 #spotlight .container-l {
@@ -177,9 +178,9 @@ h3 {                        /*  CONTROLLARE */
 }
 
 
-/* corpo centrale */
+/* MAIN */
 
-/* fee plan */
+/* CHARGING PLAN*/
 .dp-business .col.w-33, 
 .plan .col.w-33 {
     width: calc((100% / 3) - 20px);
@@ -196,11 +197,11 @@ h3 {                        /*  CONTROLLARE */
 
 .plan-option .content header {
     border-bottom: 1px solid rgb(208, 208, 211);
+    padding: 10px 0;
 }
 
 .plan-option .content .plan-type {
     padding-left: 30px;
-                                     /*  CONTROLLARE */
 }
 
 
@@ -220,10 +221,10 @@ hr.hr-l {
 }
 
 
-/* liste  */
+/* LISTS  */
 .plan-option .icon {
     list-style-type: none;
-    margin: 15px 0;
+    margin: 20px 0;
     
 }
 
@@ -247,7 +248,7 @@ hr.hr-l {
 
 
 
-/* icone  */
+/* ICONS  */
 .icon.check::before {
     content:"\f00c";
     color: blue;
@@ -281,26 +282,43 @@ hr.hr-l {
     content:"\f078";
     position: absolute;
     right: 20px;
-}                                            /*  CONTROLLARE */
+}                                          
 
 
-/* partner  */
-.partner .content {
-    padding: 40px;                            /*  CONTROLLARE */
-    
-}
-
-.partner p {
-    margin: 20px 0;                           /*  CONTROLLARE */
-}
-
-
-/* Dropbox business */
+/* DROPBOX BUSINESS */
 input[type="radio"] {
     margin-left: 10px;
     vertical-align: middle;
 }
 
+input[type="radio"]:first-child {
+    margin-left: 0;
+}
+
+/* PARTNER */
+
+
+
+/* FREE TRIAL */
+
+.trial {
+    height: 300px;
+}
+
+.trial .content {
+  position: relative;
+}
+
+.trial .content h2 {
+    padding-top: 100px;
+    color:rgb(97, 8, 43);
+}
+
+.trial a {
+    position: absolute;
+    right: 90px;
+    top: 90px;
+}
 
 /* FAQ */
 
@@ -316,17 +334,14 @@ footer {
 }
 
 footer li {
-    list-style-type: none;             /*CONTROLLARE*/ 
-    padding: 5px 0;
+    list-style-type: none; 
+    margin: 15px 0; 
 }
 
 .contact {                             /*CONTROLLARE*/ 
     padding-top: 100px;
 }
 
-.contact h4 {                            /*CONTROLLARE*/
-    padding-bottom: 20px;
-}
 
 .contact .lang {
     font-size: 10px;
@@ -354,16 +369,11 @@ footer li {
     padding: 50px 50px;
 }
 
-.box-center {
-    padding: 50px 50px;
-}
-
 .box-center > img {
     width: 30%;
-    
 }
 
-/* COLORI  */
+/* COLORS  */
 
 .bg-green {
     background-color: rgb(162, 211, 155); 
@@ -396,3 +406,5 @@ footer li {
 .bg-yellow {
     background-color: rgb(255, 216, 48); 
 }
+
+
