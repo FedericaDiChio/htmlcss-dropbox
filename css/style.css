@@ -191,10 +191,10 @@ h3 {                        /*  CONTROLLARE */
 /* fee plan */
 .dp-business .col.w-33, 
 .plan .col.w-33 {
-    width: calc((100% - 60px)/ 3);
+    width: calc((100% / 3) - 20px);
 }
 
-.col.w-33:nth-of-type(2) {
+.col.w-33:nth-child(2) {
     margin: 0 30px;
 }
 
@@ -293,7 +293,6 @@ hr.hr-l {
 }                                            /*  CONTROLLARE */
 
 
-
 /* partner  */
 .partner .content {
     padding: 40px;                            /*  CONTROLLARE */
@@ -339,7 +338,7 @@ footer {
 }
 
 footer li {
-    list-style-type: none;
+    list-style-type: none;             /*CONTROLLARE*/ 
     padding: 5px 0;
 }
 
@@ -356,3 +355,56 @@ footer li {
     
 }
 
+/* ASIDE  */
+
+.aside {
+    position:relative;
+    height: 400px;
+    background-color:rgb(180, 208, 231);
+}
+
+.square {
+    position: absolute;
+}
+
+.square svg {
+    padding: 40px;
+}
+
+.square.two {
+    top: 200px;
+    left: 0;
+    
+}
+
+.square.three {
+    top: 0;
+    left: 200px;
+}
+
+.square.four {
+    top: 200px;
+    left: 200px;
+    
+}
+
+.square.five {
+    right: 0;
+    top: 0;
+}
+
+.square.six {
+    right: 0;
+    top: 200px;
+}
+
+.square.seven {
+    right: 200px;
+    top: 0;
+}
+
+.square.eight {
+    top: 200px;
+    right: 200px;
+}
+    
