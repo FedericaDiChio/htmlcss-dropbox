@@ -29,15 +29,6 @@ body {
 
 /* UTIILITIES */ 
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 img { 
     max-width: 100%;  
 }
@@ -340,4 +331,17 @@ footer li {
 .contact .lang {
     font-size: 10px;
     
+}
+
+
+.box > .col {
+    width: calc(100% / 3);
+    border: 1px solid black;
+    height: 400px;
+} 
+
+.col.logo-box {
+    border: 1px solid black;
+    height: 50%;
+    width: 50%;
 }
