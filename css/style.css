@@ -26,7 +26,18 @@ body {
     clear: both;
 }
 
+
 /* UTIILITIES */ 
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 img { 
     max-width: 100%;  
 }
@@ -44,8 +55,11 @@ h3 {                        /*  CONTROLLARE */
 }
 
 
-
 /* testo */
+.txt-blue {
+    color:rgb(0, 97, 255);
+}
+
 .txt-center {
     text-align: center;
 }
@@ -61,14 +75,12 @@ h3 {                        /*  CONTROLLARE */
     padding: 5px 20px;
 }
 
-.btn.btn-white {
-    background-color: white;
+/* .btn-white {
     border: 1px solid black;
-    color: black;
-}
+} */
 
 
-/* margin */
+/* margin      CONTROLLARE */
 .mb-30 {                              /* top */
     margin-bottom: 30px; 
 }
@@ -81,8 +93,9 @@ h3 {                        /*  CONTROLLARE */
     margin-top: 30px; 
 }
 
-/* padding */
 
+
+/* padding */
 .pb-40 {                             /* bottom */
     padding-bottom: 40px;
 }
@@ -101,10 +114,14 @@ h3 {                        /*  CONTROLLARE */
 } */
 
 
-/* COLONNE */
 
+/* COLONNE */
 .col {
     float: left;
+}
+
+.col.w-20 {
+    width: 20%;
 }
 
 .col.w-30 {
@@ -113,7 +130,6 @@ h3 {                        /*  CONTROLLARE */
 
 .col.w-33 {
     width: calc(100% / 3);
-   
 }
 
 .col.w-50 {
@@ -124,8 +140,8 @@ h3 {                        /*  CONTROLLARE */
     width: 70%;
 }
 
-/* HEADER*/
 
+/* HEADER*/
 #main-header nav {
     height: 80px;
     line-height: 80px;
@@ -146,8 +162,8 @@ h3 {                        /*  CONTROLLARE */
     padding-bottom: 100px;              /*  CONTROLLARE */ 
 }
 
-/* SPOTLIGHT */
 
+/* SPOTLIGHT */
 #spotlight {
     height: 650px;
     background-color: rgb(180, 208, 231);
@@ -173,47 +189,112 @@ h3 {                        /*  CONTROLLARE */
 /* corpo centrale */
 
 /* fee plan */
+.dp-business .col.w-33, 
+.plan .col.w-33 {
+    width: calc((100% - 60px)/ 3);
+}
 
-
+.col.w-33:nth-of-type(2) {
+    margin: 0 30px;
+}
 
 .plan-option .content {
-    border: 1px solid black;
+    border: 1px solid rgb(208, 208, 211);
+    height: 800px;
 }
 
 .plan-option .content header {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(208, 208, 211);
 }
 
 .plan-option .content .plan-type {
-    padding-left: 30px;                                  /*  CONTROLLARE */
+    padding-left: 30px;
+                                     /*  CONTROLLARE */
 }
 
+
+hr {
+    height: 1px;
+    background-color: rgb(208, 208, 211);
+    margin: 30px 0 40px 0px;
+    border: 0;
+}
+
+hr.hr-s {
+    width: 50px;
+}
+
+hr.hr-l {
+    width: 80px;
+}
 
 
 /* liste  */
-
-
-.plan-option .list-icon {
+.plan-option .icon {
     list-style-type: none;
     margin: 15px 0;
+    
+}
+
+.icon::before,
+.icon::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight:900;
+    margin-right: 5px;
+}
+
+
+.faq .icon {
+    list-style-type: none;
+    padding: 30px 0;
+    border-top: 1px solid rgb(208, 208, 211);
+}
+
+.faq li:last-child {
+    border-bottom: 1px solid rgb(208, 208, 211);
 }
 
 
 
+/* icone  */
+.icon.check::before {
+    content:"\f00c";
+    color: blue;
+}
 
+.icon.user-plus::before {
+    content:"\f234";
+}
 
+.icon.folder::before {
+    content:"\f07b";
+}
 
+.icon.pencil::before {
+    content:"\f303";
+}
 
+.icon.smile::before {
+    content:"\f118";
+}
 
+.icon.world::before {
+    content:"\f7a2";
+}
 
+.icon.arrow-up::after {
+    content:"\f0de";
+}
 
-
-
+.icon.arrow::after {
+    content:"\f078";
+    position: absolute;
+    right: 20px;
+}                                            /*  CONTROLLARE */
 
 
 
 /* partner  */
-
 .partner .content {
     padding: 40px;                            /*  CONTROLLARE */
     
@@ -225,4 +306,53 @@ h3 {                        /*  CONTROLLARE */
 
 
 /* Dropbox business */
+input[type="radio"] {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* free trial */
+/* 
+.trial {
+    background-color: rgb(180, 208, 231);
+    height: 300px;
+    position: relative;
+}
+
+.trial .content {
+    position: absolute;
+    top: 50%;
+    
+} */
+
+/* FAQ */
+
+.faq .container-s {
+    position: relative;
+}
+
+/* FOOTER  */
+footer {
+    background-color: black;
+    height: 500px;
+    color: white;
+}
+
+footer li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.contact {                             /*CONTROLLARE*/ 
+    padding-top: 100px;
+}
+
+.contact h4 {                            /*CONTROLLARE*/
+    padding-bottom: 20px;
+}
+
+.contact .lang {
+    font-size: 10px;
+    
+}
 
