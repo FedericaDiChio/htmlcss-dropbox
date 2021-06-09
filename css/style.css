@@ -336,6 +336,7 @@ footer li {
 .box > .col {
     width: calc(100% / 3);
     height: calc(100vw / 3);
+    background-color: rgb(245, 245, 245);
 } 
 
 .col.logo-box  {
@@ -353,6 +354,14 @@ footer li {
     padding: 50px 50px;
 }
 
+.box-center {
+    padding: 50px 50px;
+}
+
+.box-center > img {
+    width: 30%;
+    
+}
 
 /* COLORI  */
 
