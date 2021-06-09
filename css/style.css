@@ -28,7 +28,6 @@ body {
 
 
 /* UTIILITIES */ 
-
 a {
     text-decoration: none;
 }
@@ -45,12 +44,16 @@ h2 {
     font-size: 32px;        
 }
 
-h3 {                        /*  CONTROLLARE */ 
+h3 {                        
     font-size: 25px;
 }
 
 
 /* TEXT */
+
+.underline {
+    text-decoration: underline;
+}
 .txt-grey {
     color:rgb(208, 208, 211);
 }
@@ -67,6 +70,10 @@ h3 {                        /*  CONTROLLARE */
     text-align: right;
 }
 
+.txt-12 {
+    font-size: 12px;
+}
+
 /* BUTTONS */
 .btn {
     background-color: rgb(0, 97, 255);
@@ -79,6 +86,21 @@ h3 {                        /*  CONTROLLARE */
     border: 1px solid black;
 }
 
+/* HR  */
+hr {
+    height: 1px;
+    background-color: rgb(208, 208, 211);
+    margin: 30px 0 40px 0px;
+    border: 0;
+}
+
+hr.hr-s {
+    width: 50px;
+}
+
+hr.hr-l {
+    width: 80px;
+}
 
 /* MARGIN */     
 .mb-30 {                              
@@ -98,7 +120,6 @@ h3 {                        /*  CONTROLLARE */
 }
 
 /* PADDING */
-
 .pb-20 {
     padding-bottom: 20px;
 }
@@ -114,6 +135,7 @@ h3 {                        /*  CONTROLLARE */
 .pad-40 {
     padding: 40px 40px;
 }
+
 
 /* COLUMNS */
 .col {
@@ -142,25 +164,23 @@ h3 {                        /*  CONTROLLARE */
 
 
 /* HEADER*/
-#main-header nav {
+#main-header {
+    margin-bottom: 150px;   
+}
+
+#main-header .menu {
     height: 80px;
     line-height: 80px;
 }
 
 #logo  {
-    vertical-align: middle;       /*manca padding-left*/
+    vertical-align: middle;       
 }
 
 #main-header .menu li {
     list-style-type: none; 
     display: inline-block;
-    vertical-align: middle;
     margin: 0 20px;
-                          
-}
-
-#main-header {
-    margin-bottom: 150px;   
 }
 
 
@@ -176,7 +196,7 @@ h3 {                        /*  CONTROLLARE */
 
 #spotlight h1 {
     font-size: 58px;
-    padding-top: 50px;                      /*  CONTROLLARE */ 
+    padding-top: 50px;                       
     
 }
 
@@ -214,27 +234,10 @@ h3 {                        /*  CONTROLLARE */
 }
 
 
-hr {
-    height: 1px;
-    background-color: rgb(208, 208, 211);
-    margin: 30px 0 40px 0px;
-    border: 0;
-}
-
-hr.hr-s {
-    width: 50px;
-}
-
-hr.hr-l {
-    width: 80px;
-}
-
-
 /* LISTS  */
 .plan-option .icon {
     list-style-type: none;
     margin: 20px 0;
-    
 }
 
 .icon::before,
@@ -254,7 +257,6 @@ hr.hr-l {
 .faq li:last-child {
     border-bottom: 1px solid rgb(208, 208, 211);
 }
-
 
 
 /* ICONS  */
@@ -347,15 +349,9 @@ footer li {
     margin: 15px 0; 
 }
 
-.contact {                             /*CONTROLLARE*/ 
+.contact {                            
     padding-top: 100px;
 }
-
-
-.contact .lang {
-    font-size: 10px;
-}
-
 
 .box > .col {
     width: calc(100% / 3);
