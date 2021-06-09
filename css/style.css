@@ -29,6 +29,10 @@ body {
 
 /* UTIILITIES */ 
 
+a {
+    text-decoration: none;
+}
+
 img { 
     max-width: 100%;  
 }
@@ -41,12 +45,16 @@ h2 {
     font-size: 32px;        
 }
 
-h3 {                       
+h3 {                        /*  CONTROLLARE */ 
     font-size: 25px;
 }
 
 
 /* TEXT */
+.txt-grey {
+    color:rgb(208, 208, 211);
+}
+
 .txt-blue {
     color:rgb(0, 97, 255);
 }
@@ -66,9 +74,10 @@ h3 {
     padding: 5px 20px;
 }
 
-/* .btn-white {
+.btn-white {
+    padding: 5px 20px;
     border: 1px solid black;
-} */
+}
 
 
 /* MARGIN */     
