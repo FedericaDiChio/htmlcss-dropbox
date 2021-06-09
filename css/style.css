@@ -330,18 +330,60 @@ footer li {
 
 .contact .lang {
     font-size: 10px;
-    
 }
 
 
 .box > .col {
     width: calc(100% / 3);
-    border: 1px solid black;
-    height: 400px;
+    height: calc(100vw / 3);
 } 
 
-.col.logo-box {
-    border: 1px solid black;
+.col.logo-box  {
     height: 50%;
     width: 50%;
+    position: relative;
+    
+}
+
+.logo-box > img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px 50px;
+}
+
+
+/* COLORI  */
+
+.bg-green {
+    background-color: rgb(162, 211, 155); 
+}
+
+.bg-bordeaux {
+    background-color: rgb(97, 8, 43);
+}
+
+.bg-skyblue {
+    background-color: rgb(0, 147, 206);
+}
+
+.bg-red {
+    background-color: rgb(255, 28, 28); 
+}
+
+.bg-darkred {
+    background-color: rgb(213, 0, 31); 
+}
+
+.bg-lightblue {
+    background-color: rgb(180, 208, 231); 
+}
+
+.bg-blue {
+    background-color: rgb(13, 36, 129); 
+}
+
+.bg-yellow {
+    background-color: rgb(255, 216, 48); 
 }
