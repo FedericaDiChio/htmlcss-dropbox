@@ -169,6 +169,10 @@ hr.hr-l {
     width: 30%;
 }
 
+.col.w-33:nth-child(2) {
+    margin: 0 30px;
+}
+
 .col.w-33 {
     width: calc((100% / 3) - 20px);
 }
@@ -229,9 +233,6 @@ hr.hr-l {
 /* MAIN */
 
 /* BOX CON MARGINI */
-.col.w-33:nth-child(2) {
-    margin: 0 30px;
-}
 
 .box-line {
     border: 1px solid rgb(208, 208, 211);
