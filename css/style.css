@@ -82,20 +82,24 @@ h3 {
 
 /* BUTTONS */
 .btn {
+    padding: 5px 20px;
+}
+
+.btn-blue {
     background-color: rgb(0, 97, 255);
     color: white;
-    padding: 5px 20px;
 }
 
 .btn-white {
-    padding: 5px 20px;
-    border: 1px solid black;
     background-color: white;
 }
 
-.btn-white.large {
+.btn.line {
+    border: 1px solid black;
+}
+
+.large {
     padding: 5px 50px;
-    border: 0;
 }
 
 /* HR  */
@@ -148,6 +152,9 @@ hr.hr-l {
     padding: 40px 40px;
 }
 
+.px-30 {
+    padding: 0 30px;
+}
 
 /* COLUMNS */
 .col {
@@ -163,7 +170,7 @@ hr.hr-l {
 }
 
 .col.w-33 {
-    width: calc(100% / 3);
+    width: calc((100% / 3) - 20px);
 }
 
 .col.w-50 {
@@ -221,31 +228,31 @@ hr.hr-l {
 
 /* MAIN */
 
-/* CHARGING PLAN*/
-.dp-business .col.w-33, 
-.plan .col.w-33 {
-    width: calc((100% / 3) - 20px);
-}
-
+/* BOX CON MARGINI */
 .col.w-33:nth-child(2) {
     margin: 0 30px;
 }
 
-
-.plan-option .content {
+.box-line {
     border: 1px solid rgb(208, 208, 211);
+}
+
+/* CHARGIN PLAN */
+
+.plan .plan-type {
     height: 800px;
 }
 
-.plan-option .section-header {
+/* CONTACT  */
+.plan .contact {
+    height: 200px;
+}
+
+.section-header {
     border-bottom: 1px solid rgb(208, 208, 211);
     padding: 10px 0;
 }
 
-.plan-option .plan-type {
-    padding: 0 30px;
-    
-}
 
 /* LISTS  */
 .plan-option .icon {
