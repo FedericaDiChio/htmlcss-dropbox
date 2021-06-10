@@ -238,6 +238,11 @@ hr.hr-l {
     border: 1px solid rgb(208, 208, 211);
 }
 
+.section-header {
+    border-bottom: 1px solid rgb(208, 208, 211);
+    padding: 10px 0;
+}
+
 /* CHARGIN PLAN */
 
 .plan .plan-type {
@@ -249,10 +254,6 @@ hr.hr-l {
     height: 200px;
 }
 
-.section-header {
-    border-bottom: 1px solid rgb(208, 208, 211);
-    padding: 10px 0;
-}
 
 
 /* LISTS  */
